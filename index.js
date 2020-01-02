@@ -20,6 +20,5 @@ function shuffle(array) {
 
 }
 
-
 console.log(shuffle(devList));
 
