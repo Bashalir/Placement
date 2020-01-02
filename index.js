@@ -22,10 +22,17 @@ function shuffle(array) {
 
 let devPlaced = shuffle(devList);
 
-var placeList = document.querySelectorAll("place");
+var placeList = document.getElementsByClassName("place");
 
-for (var i = 0; i < placeList.length; ++i) {
-    placeList[i].textContent = devPlaced[i]; 
+console.log(placeList);
+
+
+for (let i = 0; i < placeList.length; ++i) {
+    console.log('ok');
+    placeList[i].innerText = devPlaced[i]; 
 }
 
+/*
+console.log(placeList);
 
+console.log(devPlaced);*/
