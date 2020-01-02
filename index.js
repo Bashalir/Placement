@@ -20,5 +20,12 @@ function shuffle(array) {
 
 }
 
-console.log(shuffle(devList));
+let devPlaced = shuffle(devList);
+
+var placeList = document.querySelectorAll("place");
+
+for (var i = 0; i < placeList.length; ++i) {
+    placeList[i].textContent = devPlaced[i]; 
+}
+
 
